@@ -12,7 +12,7 @@ string comm_line = "";
 
 //Non member Functions
 void start(){
-    cout <<"{Kaustav}"<<curr_dir << ">>>>";
+    cout <<"{Kaustav}"<<curr_dir << ">>>";
 }
 
 string input(){
