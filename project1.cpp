@@ -73,6 +73,30 @@ void comm_reader(string &str){
         }
         cout << endl;
     }
+    else if (comm == "mkdir;")
+    {
+        fs::path dir_path = curr_dir;
+        dir_path /= phrase;
+        fs::create_directories(dir_path);
+        curr_dir = dir_path;
+    }
+    else if (comm == "rm;")
+    {
+        fs::path dir_path = curr_dir;
+        dir_path /= phrase;
+        int x = 0;
+        for (const auto &path: curr_dir){
+            if(path == phrase){
+                x += 1;
+            }
+        }
+            if (x != 0){
+            cout << "You are already in the folder cant delete"<< endl;
+        }
+        else{
+            fs::remove_all(dir_path);
+        }
+    }
 }
 
 
