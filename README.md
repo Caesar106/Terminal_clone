@@ -1,6 +1,6 @@
-# Terminal Clone
+# Shell Clone
 
-A terminal-like file manager written in C++ that mimics basic shell commands such as `cd`, `ls`, `mkdir`, and `rm` using the C++17 Filesystem library.
+A shell-like file manager written in C++ that mimics basic shell commands such as `cd`, `ls`, `mkdir`, and `rm` using the C++17 Filesystem library.
 
 ---
 
